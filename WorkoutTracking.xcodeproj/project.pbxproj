@@ -12,6 +12,9 @@
 		F12CD9BB2C206EA2003A4BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9BA2C206EA2003A4BCA /* ViewController.swift */; };
 		F12CD9C02C206EA5003A4BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */; };
 		F12CD9C32C206EA5003A4BCA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F12CD9C22C206EA5003A4BCA /* Base */; };
+		F14817C42C2991BD00A30D20 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817C32C2991BD00A30D20 /* TabBarController.swift */; };
+		F14817C62C29C1CA00A30D20 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */; };
+		F14817C82C29C2A900A30D20 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817C72C29C2A900A30D20 /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12CD9C22C206EA5003A4BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12CD9C42C206EA5003A4BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14817C32C2991BD00A30D20 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F14817C72C29C2A900A30D20 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				F12CD9BA2C206EA2003A4BCA /* ViewController.swift */,
+				F14817C32C2991BD00A30D20 /* TabBarController.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -92,6 +99,8 @@
 			children = (
 				F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */,
 				F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */,
+				F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */,
+				F14817C72C29C2A900A30D20 /* Resources.swift */,
 			);
 			path = application;
 			sourceTree = "<group>";
@@ -138,6 +147,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				uk,
 			);
 			mainGroup = F12CD9AA2C206EA2003A4BCA;
 			productRefGroup = F12CD9B42C206EA2003A4BCA /* Products */;
@@ -156,6 +167,7 @@
 			files = (
 				F12CD9C02C206EA5003A4BCA /* Assets.xcassets in Resources */,
 				F12CD9C32C206EA5003A4BCA /* Base in Resources */,
+				F14817C62C29C1CA00A30D20 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F12CD9BB2C206EA2003A4BCA /* ViewController.swift in Sources */,
+				F14817C42C2991BD00A30D20 /* TabBarController.swift in Sources */,
 				F12CD9B72C206EA2003A4BCA /* AppDelegate.swift in Sources */,
+				F14817C82C29C2A900A30D20 /* Resources.swift in Sources */,
 				F12CD9B92C206EA2003A4BCA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +259,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -301,6 +316,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
