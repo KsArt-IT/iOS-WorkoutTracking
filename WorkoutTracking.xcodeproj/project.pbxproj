@@ -54,6 +54,7 @@
 		F12CD9B52C206EA2003A4BCA /* WorkoutTracking */ = {
 			isa = PBXGroup;
 			children = (
+				F14817C22C29911800A30D20 /* application */,
 				F14817C12C29828C00A30D20 /* resources */,
 				F14817C02C29828300A30D20 /* data */,
 				F14817BF2C29827B00A30D20 /* ui */,
@@ -64,8 +65,6 @@
 		F14817BF2C29827B00A30D20 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */,
-				F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */,
 				F12CD9BA2C206EA2003A4BCA /* ViewController.swift */,
 			);
 			path = ui;
@@ -86,6 +85,15 @@
 				F12CD9C12C206EA5003A4BCA /* LaunchScreen.storyboard */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		F14817C22C29911800A30D20 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */,
+				F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */,
+			);
+			path = application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
