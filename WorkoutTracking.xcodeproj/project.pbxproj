@@ -10,7 +10,6 @@
 		F12CD9B72C206EA2003A4BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */; };
 		F12CD9B92C206EA2003A4BCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */; };
 		F12CD9BB2C206EA2003A4BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9BA2C206EA2003A4BCA /* ViewController.swift */; };
-		F12CD9BE2C206EA2003A4BCA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F12CD9BD2C206EA2003A4BCA /* Base */; };
 		F12CD9C02C206EA5003A4BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */; };
 		F12CD9C32C206EA5003A4BCA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F12CD9C22C206EA5003A4BCA /* Base */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F12CD9BA2C206EA2003A4BCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F12CD9BD2C206EA2003A4BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12CD9C22C206EA5003A4BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12CD9C42C206EA5003A4BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				F14817C12C29828C00A30D20 /* resources */,
 				F14817C02C29828300A30D20 /* data */,
 				F14817BF2C29827B00A30D20 /* ui */,
-				F12CD9C42C206EA5003A4BCA /* Info.plist */,
 			);
 			path = WorkoutTracking;
 			sourceTree = "<group>";
@@ -70,8 +67,6 @@
 				F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */,
 				F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */,
 				F12CD9BA2C206EA2003A4BCA /* ViewController.swift */,
-				F12CD9BC2C206EA2003A4BCA /* Main.storyboard */,
-				F12CD9C12C206EA5003A4BCA /* LaunchScreen.storyboard */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -87,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */,
+				F12CD9C42C206EA5003A4BCA /* Info.plist */,
+				F12CD9C12C206EA5003A4BCA /* LaunchScreen.storyboard */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -151,7 +148,6 @@
 			files = (
 				F12CD9C02C206EA5003A4BCA /* Assets.xcassets in Resources */,
 				F12CD9C32C206EA5003A4BCA /* Base in Resources */,
-				F12CD9BE2C206EA2003A4BCA /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F12CD9BC2C206EA2003A4BCA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F12CD9BD2C206EA2003A4BCA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F12CD9C12C206EA5003A4BCA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -318,10 +306,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WorkoutTracking/Info.plist;
+				INFOPLIST_FILE = WorkoutTracking/resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -350,10 +340,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WorkoutTracking/Info.plist;
+				INFOPLIST_FILE = WorkoutTracking/resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
