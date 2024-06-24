@@ -26,4 +26,10 @@ enum Resources {
             static let settings = UIImage(systemName: "gearshape")
         }
     }
+
+    enum Fonts {
+        static func helvelticaRegular(with size: CGFloat) -> UIFont {
+            UIFont(name: "Helvetica", size: size) ?? UIFont()
+        }
+    }
 }

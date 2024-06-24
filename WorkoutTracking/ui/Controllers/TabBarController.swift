@@ -9,6 +9,10 @@ import UIKit
 
 final class TabBarController: UITabBarController {
 
+    convenience init() {
+        self.init(nibName: nil, bundle: nil)
+    }
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         configere()
@@ -32,10 +36,10 @@ final class TabBarController: UITabBarController {
         let progressController = UIViewController()
         let settingsController = UIViewController()
 
-        let overviewNavigation = UINavigationController(rootViewController: overviewController)
-        let sessionNavigation = UINavigationController(rootViewController: sessionController)
-        let progressNavigation = UINavigationController(rootViewController: progressController)
-        let settingsNavigation = UINavigationController(rootViewController: settingsController)
+        let overviewNavigation = NavBarController(rootViewController: overviewController)
+        let sessionNavigation = NavBarController(rootViewController: sessionController)
+        let progressNavigation = NavBarController(rootViewController: progressController)
+        let settingsNavigation = NavBarController(rootViewController: settingsController)
 
         overviewNavigation.tabBarItem = UITabBarItem(
             title: Resources.Strings.TabBar.overview,

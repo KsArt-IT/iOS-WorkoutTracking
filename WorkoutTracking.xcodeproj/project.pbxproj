@@ -15,6 +15,8 @@
 		F14817C42C2991BD00A30D20 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817C32C2991BD00A30D20 /* TabBarController.swift */; };
 		F14817C62C29C1CA00A30D20 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */; };
 		F14817C82C29C2A900A30D20 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817C72C29C2A900A30D20 /* Resources.swift */; };
+		F14817CB2C29CB8C00A30D20 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817CA2C29CB8C00A30D20 /* NavBarController.swift */; };
+		F14817CE2C29EB5500A30D20 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817CD2C29EB5500A30D20 /* BaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F14817C32C2991BD00A30D20 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F14817C72C29C2A900A30D20 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		F14817CA2C29CB8C00A30D20 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		F14817CD2C29EB5500A30D20 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				F12CD9BA2C206EA2003A4BCA /* ViewController.swift */,
-				F14817C32C2991BD00A30D20 /* TabBarController.swift */,
+				F14817CC2C29EB1F00A30D20 /* Controllers */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -103,6 +107,16 @@
 				F14817C72C29C2A900A30D20 /* Resources.swift */,
 			);
 			path = application;
+			sourceTree = "<group>";
+		};
+		F14817CC2C29EB1F00A30D20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F14817C32C2991BD00A30D20 /* TabBarController.swift */,
+				F14817CA2C29CB8C00A30D20 /* NavBarController.swift */,
+				F14817CD2C29EB5500A30D20 /* BaseController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F12CD9BB2C206EA2003A4BCA /* ViewController.swift in Sources */,
+				F14817CB2C29CB8C00A30D20 /* NavBarController.swift in Sources */,
+				F14817CE2C29EB5500A30D20 /* BaseController.swift in Sources */,
 				F14817C42C2991BD00A30D20 /* TabBarController.swift in Sources */,
 				F12CD9B72C206EA2003A4BCA /* AppDelegate.swift in Sources */,
 				F14817C82C29C2A900A30D20 /* Resources.swift in Sources */,
