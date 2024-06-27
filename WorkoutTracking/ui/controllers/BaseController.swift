@@ -12,23 +12,13 @@ class BaseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addViews()
+        layoutViews()
         configure()
     }
 }
 
 extension BaseController {
-    func addViews() {
-
-    }
-
-    func layoutViews() {
-
-    }
-
-    func configure() {
-        view.backgroundColor = .background
-    }
-
     func setTitle(of tab: Tabs) {
         // при установке титла окна меняется и tabBarItem.title, поэтому переназначаем
         let titles: Titles = Resources.Strings.Title.get(of: tab)
@@ -62,11 +52,27 @@ extension BaseController {
 }
 
 @objc extension BaseController {
+    func addViews() {
+
+    }
+
+    func layoutViews() {
+
+    }
+
+    func configure() {
+        view.backgroundColor = .background
+    }
+
     func navBarLeftButtonHandler() {
 
     }
     
     func navBarRightButtonHandler() {
+
+    }
+
+    func secondaryButtonHandler() {
 
     }
 }

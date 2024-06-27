@@ -21,6 +21,7 @@
 		F14817D22C29F12A00A30D20 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D12C29F12A00A30D20 /* SessionController.swift */; };
 		F14817D42C29F14400A30D20 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D32C29F14400A30D20 /* ProgressController.swift */; };
 		F14817D62C29F15B00A30D20 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D52C29F15B00A30D20 /* SettingsController.swift */; };
+		F1C14FDF2C2DC16B0017EE1B /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F14817D12C29F12A00A30D20 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		F14817D32C29F14400A30D20 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		F14817D52C29F15B00A30D20 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,8 @@
 		F14817BF2C29827B00A30D20 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				F14817CC2C29EB1F00A30D20 /* Controllers */,
-				F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */,
+				F1C14FDD2C2DC12B0017EE1B /* views */,
+				F14817CC2C29EB1F00A30D20 /* controllers */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -117,7 +119,7 @@
 			path = application;
 			sourceTree = "<group>";
 		};
-		F14817CC2C29EB1F00A30D20 /* Controllers */ = {
+		F14817CC2C29EB1F00A30D20 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F14817C32C2991BD00A30D20 /* TabBarController.swift */,
@@ -128,7 +130,16 @@
 				F14817D32C29F14400A30D20 /* ProgressController.swift */,
 				F14817D52C29F15B00A30D20 /* SettingsController.swift */,
 			);
-			path = Controllers;
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		F1C14FDD2C2DC12B0017EE1B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */,
+				F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C14FDF2C2DC16B0017EE1B /* SecondaryButton.swift in Sources */,
 				F14817D42C29F14400A30D20 /* ProgressController.swift in Sources */,
 				F12CD9BB2C206EA2003A4BCA /* OverviewController.swift in Sources */,
 				F14817D22C29F12A00A30D20 /* SessionController.swift in Sources */,

@@ -38,6 +38,10 @@ enum Resources {
         }
 
         enum Buttons {
+            enum Common {
+                static let allWorkouts  = String(localized: "buttonAllWorkouts")
+            }
+
             enum Left {
                 static let overview = String(localized: "overviewNavBarButtonLeft")
                 static let session = String(localized: "sessionNavBarButtonLeft")
@@ -55,6 +59,10 @@ enum Resources {
     }
 
     enum Images{
+        enum Common {
+            static let downArrow = UIImage(systemName: "chevron.down") ?? UIImage()
+        }
+
         enum TabBar {
             static let overview = UIImage(systemName: "house") ?? UIImage()
             static let session = UIImage(systemName: "clock.arrow.2.circlepath") ?? UIImage()
@@ -66,6 +74,13 @@ enum Resources {
     enum Fonts {
         static func helvelticaRegular(with size: CGFloat = 17) -> UIFont {
             UIFont(name: "Helvetica", size: size) ?? UIFont()
+        }
+    }
+
+    enum Constant {
+        enum Buttons {
+            static let cornerRadius: CGFloat = 14
+            static let height: CGFloat = 28
         }
     }
 }
