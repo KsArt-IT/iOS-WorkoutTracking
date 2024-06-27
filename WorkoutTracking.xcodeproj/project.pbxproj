@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F12CD9B72C206EA2003A4BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */; };
 		F12CD9B92C206EA2003A4BCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */; };
-		F12CD9BB2C206EA2003A4BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9BA2C206EA2003A4BCA /* ViewController.swift */; };
+		F12CD9BB2C206EA2003A4BCA /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9BA2C206EA2003A4BCA /* OverviewController.swift */; };
 		F12CD9C02C206EA5003A4BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */; };
 		F12CD9C32C206EA5003A4BCA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F12CD9C22C206EA5003A4BCA /* Base */; };
 		F14817C42C2991BD00A30D20 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817C32C2991BD00A30D20 /* TabBarController.swift */; };
@@ -17,13 +17,17 @@
 		F14817C82C29C2A900A30D20 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817C72C29C2A900A30D20 /* Resources.swift */; };
 		F14817CB2C29CB8C00A30D20 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817CA2C29CB8C00A30D20 /* NavBarController.swift */; };
 		F14817CE2C29EB5500A30D20 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817CD2C29EB5500A30D20 /* BaseController.swift */; };
+		F14817D02C29EEBA00A30D20 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */; };
+		F14817D22C29F12A00A30D20 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D12C29F12A00A30D20 /* SessionController.swift */; };
+		F14817D42C29F14400A30D20 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D32C29F14400A30D20 /* ProgressController.swift */; };
+		F14817D62C29F15B00A30D20 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D52C29F15B00A30D20 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F12CD9B32C206EA2003A4BCA /* WorkoutTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F12CD9BA2C206EA2003A4BCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F12CD9BA2C206EA2003A4BCA /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
 		F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12CD9C22C206EA5003A4BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12CD9C42C206EA5003A4BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +36,10 @@
 		F14817C72C29C2A900A30D20 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		F14817CA2C29CB8C00A30D20 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		F14817CD2C29EB5500A30D20 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		F14817D12C29F12A00A30D20 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
+		F14817D32C29F14400A30D20 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		F14817D52C29F15B00A30D20 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +83,8 @@
 		F14817BF2C29827B00A30D20 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				F12CD9BA2C206EA2003A4BCA /* ViewController.swift */,
 				F14817CC2C29EB1F00A30D20 /* Controllers */,
+				F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -94,6 +102,7 @@
 				F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */,
 				F12CD9C42C206EA5003A4BCA /* Info.plist */,
 				F12CD9C12C206EA5003A4BCA /* LaunchScreen.storyboard */,
+				F14817C72C29C2A900A30D20 /* Resources.swift */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -104,7 +113,6 @@
 				F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */,
 				F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */,
 				F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */,
-				F14817C72C29C2A900A30D20 /* Resources.swift */,
 			);
 			path = application;
 			sourceTree = "<group>";
@@ -115,6 +123,10 @@
 				F14817C32C2991BD00A30D20 /* TabBarController.swift */,
 				F14817CA2C29CB8C00A30D20 /* NavBarController.swift */,
 				F14817CD2C29EB5500A30D20 /* BaseController.swift */,
+				F12CD9BA2C206EA2003A4BCA /* OverviewController.swift */,
+				F14817D12C29F12A00A30D20 /* SessionController.swift */,
+				F14817D32C29F14400A30D20 /* ProgressController.swift */,
+				F14817D52C29F15B00A30D20 /* SettingsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -192,10 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F12CD9BB2C206EA2003A4BCA /* ViewController.swift in Sources */,
+				F14817D42C29F14400A30D20 /* ProgressController.swift in Sources */,
+				F12CD9BB2C206EA2003A4BCA /* OverviewController.swift in Sources */,
+				F14817D22C29F12A00A30D20 /* SessionController.swift in Sources */,
 				F14817CB2C29CB8C00A30D20 /* NavBarController.swift in Sources */,
 				F14817CE2C29EB5500A30D20 /* BaseController.swift in Sources */,
+				F14817D62C29F15B00A30D20 /* SettingsController.swift in Sources */,
 				F14817C42C2991BD00A30D20 /* TabBarController.swift in Sources */,
+				F14817D02C29EEBA00A30D20 /* UIViewExt.swift in Sources */,
 				F12CD9B72C206EA2003A4BCA /* AppDelegate.swift in Sources */,
 				F14817C82C29C2A900A30D20 /* Resources.swift in Sources */,
 				F12CD9B92C206EA2003A4BCA /* SceneDelegate.swift in Sources */,
