@@ -63,6 +63,7 @@ private extension SecondaryButton {
     func configure() {
         layer.cornerRadius = Resources.Constant.Buttons.cornerRadius
         makeSystem(self)
+        updateAppearance()
 
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center

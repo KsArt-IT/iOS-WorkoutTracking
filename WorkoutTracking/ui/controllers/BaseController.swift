@@ -72,7 +72,4 @@ extension BaseController {
 
     }
 
-    func secondaryButtonHandler() {
-
-    }
 }

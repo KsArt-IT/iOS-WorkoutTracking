@@ -59,8 +59,14 @@ enum Resources {
     }
 
     enum Images{
+        // Создание конфигурации символа с масштабом Large
+        private static let large = UIImage.SymbolConfiguration(scale: .large)
+
         enum Common {
             static let downArrow = UIImage(systemName: "chevron.down") ?? UIImage()
+            static let plusCircleFill = UIImage(systemName: "plus.circle.fill") ?? UIImage()
+            // Применение конфигурации к изображению
+            static let plusCircleFillLarge = UIImage(systemName: "plus.circle.fill")?.withConfiguration(large) ?? UIImage()
         }
 
         enum TabBar {
@@ -78,9 +84,14 @@ enum Resources {
     }
 
     enum Constant {
+        static let small: CGFloat = 8
+        static let medium: CGFloat = 16
+        static let large: CGFloat = 32
+
         enum Buttons {
             static let cornerRadius: CGFloat = 14
             static let height: CGFloat = 28
+            static let size: CGFloat = 30
         }
     }
 }

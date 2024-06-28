@@ -7,9 +7,9 @@
 
 import UIKit
 
-@objc extension UIView {
+extension UIView {
 
-    func addBottomBorder(with color: UIColor, height: CGFloat) {
+    func addBottomBorder(with color: UIColor = .ribbon, height: CGFloat = 1) {
         let separator = UIView()
         separator.backgroundColor = color
         separator.autoresizingMask = [.flexibleWidth, .flexibleHeight]

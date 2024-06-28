@@ -59,11 +59,22 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "-"
+            "value" : "Today"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сегодня"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сьогодні"
           }
         }
-      },
-      "shouldTranslate" : false
+      }
     },
     "progressNavBarButtonLeft" : {
       "extractionState" : "manual",
