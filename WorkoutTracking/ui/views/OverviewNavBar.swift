@@ -12,13 +12,7 @@ final class OverviewNavBar: BaseView {
     private let titleLabel = UILabel()
     private let allWorkoutsButton = SecondaryButton()
     private let addButton = UIButton()
-
-    private let weekView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .blue.withAlphaComponent(0.25)
-
-        return view
-    }()
+    private let weekView = WeekView()
 
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -67,12 +61,11 @@ extension OverviewNavBar {
             weekView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Resources.Constant.medium),
             weekView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Resources.Constant.medium),
             weekView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Resources.Constant.small),
-            weekView.heightAnchor.constraint(equalToConstant: 48)
         ])
     }
 
-    override func configure() {
-        super.configure()
+    override func configureViews() {
+        super.configureViews()
         backgroundColor = .white
 
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

@@ -84,13 +84,17 @@ enum Resources {
     }
 
     enum Constant {
+        static let minimal: CGFloat = 2
+        static let tiny: CGFloat = 4
         static let small: CGFloat = 8
         static let medium: CGFloat = 16
         static let large: CGFloat = 32
 
+        static let cornerRadius: CGFloat = 6
+
         enum Buttons {
-            static let cornerRadius: CGFloat = 14
             static let height: CGFloat = 28
+            static let cornerRadius: CGFloat = height / 2
             static let size: CGFloat = 30
         }
     }

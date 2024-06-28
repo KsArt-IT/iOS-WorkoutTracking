@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F129D4782C2ECCA0007003E4 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D4772C2ECCA0007003E4 /* OverviewNavBar.swift */; };
 		F129D47A2C2ECCE8007003E4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D4792C2ECCE8007003E4 /* BaseView.swift */; };
+		F129D47C2C2EFC6C007003E4 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D47B2C2EFC6C007003E4 /* WeekView.swift */; };
+		F129D47E2C2EFEA3007003E4 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D47D2C2EFEA3007003E4 /* WeekDayView.swift */; };
+		F129D4802C2F0F65007003E4 /* CalendarExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D47F2C2F0F64007003E4 /* CalendarExt.swift */; };
 		F12CD9B72C206EA2003A4BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */; };
 		F12CD9B92C206EA2003A4BCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */; };
 		F12CD9BB2C206EA2003A4BCA /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CD9BA2C206EA2003A4BCA /* OverviewController.swift */; };
@@ -29,6 +32,9 @@
 /* Begin PBXFileReference section */
 		F129D4772C2ECCA0007003E4 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		F129D4792C2ECCE8007003E4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F129D47B2C2EFC6C007003E4 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		F129D47D2C2EFEA3007003E4 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		F129D47F2C2F0F64007003E4 /* CalendarExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExt.swift; sourceTree = "<group>"; };
 		F12CD9B32C206EA2003A4BCA /* WorkoutTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 				F12CD9C42C206EA5003A4BCA /* Info.plist */,
 				F12CD9C12C206EA5003A4BCA /* LaunchScreen.storyboard */,
 				F14817C72C29C2A900A30D20 /* Resources.swift */,
+				F129D47F2C2F0F64007003E4 /* CalendarExt.swift */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -144,6 +151,8 @@
 				F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */,
 				F129D4772C2ECCA0007003E4 /* OverviewNavBar.swift */,
 				F129D4792C2ECCE8007003E4 /* BaseView.swift */,
+				F129D47B2C2EFC6C007003E4 /* WeekView.swift */,
+				F129D47D2C2EFEA3007003E4 /* WeekDayView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -222,11 +231,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C14FDF2C2DC16B0017EE1B /* SecondaryButton.swift in Sources */,
+				F129D47E2C2EFEA3007003E4 /* WeekDayView.swift in Sources */,
 				F14817D42C29F14400A30D20 /* ProgressController.swift in Sources */,
 				F12CD9BB2C206EA2003A4BCA /* OverviewController.swift in Sources */,
+				F129D4802C2F0F65007003E4 /* CalendarExt.swift in Sources */,
 				F14817D22C29F12A00A30D20 /* SessionController.swift in Sources */,
 				F129D4782C2ECCA0007003E4 /* OverviewNavBar.swift in Sources */,
 				F14817CB2C29CB8C00A30D20 /* NavBarController.swift in Sources */,
+				F129D47C2C2EFC6C007003E4 /* WeekView.swift in Sources */,
 				F14817CE2C29EB5500A30D20 /* BaseController.swift in Sources */,
 				F14817D62C29F15B00A30D20 /* SettingsController.swift in Sources */,
 				F14817C42C2991BD00A30D20 /* TabBarController.swift in Sources */,
