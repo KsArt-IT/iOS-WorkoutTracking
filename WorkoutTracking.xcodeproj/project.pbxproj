@@ -111,6 +111,7 @@
 		F14817C12C29828C00A30D20 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */,
 				F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */,
 				F12CD9C42C206EA5003A4BCA /* Info.plist */,
 				F12CD9C12C206EA5003A4BCA /* LaunchScreen.storyboard */,
@@ -125,7 +126,6 @@
 			children = (
 				F12CD9B62C206EA2003A4BCA /* AppDelegate.swift */,
 				F12CD9B82C206EA2003A4BCA /* SceneDelegate.swift */,
-				F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */,
 			);
 			path = application;
 			sourceTree = "<group>";
@@ -133,15 +133,66 @@
 		F14817CC2C29EB1F00A30D20 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F14817C32C2991BD00A30D20 /* TabBarController.swift */,
-				F14817CA2C29CB8C00A30D20 /* NavBarController.swift */,
-				F14817CD2C29EB5500A30D20 /* BaseController.swift */,
-				F12CD9BA2C206EA2003A4BCA /* OverviewController.swift */,
-				F14817D12C29F12A00A30D20 /* SessionController.swift */,
-				F14817D32C29F14400A30D20 /* ProgressController.swift */,
-				F14817D52C29F15B00A30D20 /* SettingsController.swift */,
+				F15F1CB32C30145200161DCB /* base */,
+				F15F1CAE2C30124F00161DCB /* navigation */,
+				F15F1CAF2C30126A00161DCB /* overview */,
+				F15F1CB02C3013EF00161DCB /* session */,
+				F15F1CB12C3013FF00161DCB /* progress */,
+				F15F1CB22C30141300161DCB /* settings */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		F15F1CAE2C30124F00161DCB /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F14817CA2C29CB8C00A30D20 /* NavBarController.swift */,
+				F14817C32C2991BD00A30D20 /* TabBarController.swift */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		F15F1CAF2C30126A00161DCB /* overview */ = {
+			isa = PBXGroup;
+			children = (
+				F12CD9BA2C206EA2003A4BCA /* OverviewController.swift */,
+				F129D4772C2ECCA0007003E4 /* OverviewNavBar.swift */,
+				F129D47B2C2EFC6C007003E4 /* WeekView.swift */,
+				F129D47D2C2EFEA3007003E4 /* WeekDayView.swift */,
+			);
+			path = overview;
+			sourceTree = "<group>";
+		};
+		F15F1CB02C3013EF00161DCB /* session */ = {
+			isa = PBXGroup;
+			children = (
+				F14817D12C29F12A00A30D20 /* SessionController.swift */,
+			);
+			path = session;
+			sourceTree = "<group>";
+		};
+		F15F1CB12C3013FF00161DCB /* progress */ = {
+			isa = PBXGroup;
+			children = (
+				F14817D32C29F14400A30D20 /* ProgressController.swift */,
+			);
+			path = progress;
+			sourceTree = "<group>";
+		};
+		F15F1CB22C30141300161DCB /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				F14817D52C29F15B00A30D20 /* SettingsController.swift */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		F15F1CB32C30145200161DCB /* base */ = {
+			isa = PBXGroup;
+			children = (
+				F14817CD2C29EB5500A30D20 /* BaseController.swift */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 		F1C14FDD2C2DC12B0017EE1B /* views */ = {
@@ -149,10 +200,7 @@
 			children = (
 				F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */,
 				F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */,
-				F129D4772C2ECCA0007003E4 /* OverviewNavBar.swift */,
 				F129D4792C2ECCE8007003E4 /* BaseView.swift */,
-				F129D47B2C2EFC6C007003E4 /* WeekView.swift */,
-				F129D47D2C2EFEA3007003E4 /* WeekDayView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";

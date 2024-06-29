@@ -27,9 +27,9 @@ final class SecondaryButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        addViews()
-        layoutViews()
-        configure()
+        setupViews()
+        constraintViews()
+        configureAppearance()
     }
     
     required init?(coder: NSCoder) {
@@ -42,12 +42,12 @@ final class SecondaryButton: UIButton {
 }
 
 private extension SecondaryButton {
-    func addViews() {
+    func setupViews() {
         addSubview(label)
         addSubview(icon)
     }
 
-    func layoutViews() {
+    func constraintViews() {
         NSLayoutConstraint.activate([
             icon.centerYAnchor.constraint(equalTo: centerYAnchor),
             icon.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
@@ -60,10 +60,11 @@ private extension SecondaryButton {
         ])
     }
 
-    func configure() {
+    func configureAppearance() {
         layer.cornerRadius = Resources.Constant.Buttons.cornerRadius
         makeSystem(self)
         updateAppearance()
+        backgroundColor = .secondary
 
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
@@ -75,15 +76,12 @@ private extension SecondaryButton {
 
     func updateAppearance() {
         if isHighlighted {
-            backgroundColor = .secondaryHighlighted
             label.textColor = .highlighted
             icon.tintColor = .highlighted
         } else if !isEnabled {
-            backgroundColor = .secondary
             label.textColor = .inactive
             icon.tintColor = .inactive
         } else {
-            backgroundColor = .secondary
             label.textColor = .active
             icon.tintColor = .active
         }

@@ -14,14 +14,14 @@ final class WeekView: BaseView {
 }
 
 extension WeekView {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
 
         addSubview(stackView)
     }
 
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
 
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -33,11 +33,11 @@ extension WeekView {
         ])
     }
 
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
 
         // отступы между элементами
-        stackView.spacing = 8
+        stackView.spacing = Resources.Constant.small
         // сделать равными по ширине
         stackView.distribution = .fillEqually
 

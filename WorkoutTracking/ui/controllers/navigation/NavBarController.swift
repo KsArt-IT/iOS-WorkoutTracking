@@ -26,3 +26,8 @@ final class NavBarController: UINavigationController {
         navigationBar.addBottomBorder(with: .ribbon, height: 1)
     }
 }
+
+enum NavBarPosition {
+    case left
+    case right
+}

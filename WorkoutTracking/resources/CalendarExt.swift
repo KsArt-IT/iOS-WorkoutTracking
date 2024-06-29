@@ -15,7 +15,7 @@ final class CalendarExt {
 
     /// A calendar instance with Monday as the first day of the week.
     private static let calendar: Calendar = {
-        var calendar = Calendar.current
+        var calendar = Calendar.autoupdatingCurrent
         calendar.firstWeekday = 2  // 2 means Monday is the first day of the week
         calendar.locale = Locale.autoupdatingCurrent
         return calendar
@@ -43,19 +43,7 @@ final class CalendarExt {
                 return nil
             }
             let dayComponent = calendar.component(.day, from: date)
-            return (weekDaysShort[i], dayComponent, isDatesEqual(date, fromDate))
+            return (weekDaysShort[i], dayComponent, calendar.isDate(date, inSameDayAs: fromDate))
         }
-    }
-
-    /// Сравнивает две даты без учета времени.
-    ///
-    /// - Parameters:
-    ///   - date1: Первая дата для сравнения.
-    ///   - date2: Вторая дата для сравнения.
-    /// - Returns: `true`, если даты равны без учета времени; `false` в противном случае.
-    static func isDatesEqual(_ date1: Date, _ date2: Date) -> Bool {
-        let components1 = calendar.dateComponents([.year, .month, .day], from: date1)
-        let components2 = calendar.dateComponents([.year, .month, .day], from: date2)
-        return components1 == components2
     }
 }

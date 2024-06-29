@@ -26,8 +26,8 @@ extension WeekView {
 }
 
 extension WeekView.WeekDayView {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
 
         addSubview(stackView)
 
@@ -35,8 +35,8 @@ extension WeekView.WeekDayView {
         stackView.addArrangedSubview(dateLabel)
     }
 
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
 
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -48,8 +48,8 @@ extension WeekView.WeekDayView {
         ])
     }
 
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
 
         layer.cornerRadius = Resources.Constant.small
         layer.masksToBounds = true
