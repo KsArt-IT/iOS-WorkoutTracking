@@ -19,13 +19,14 @@
 		F12CD9C32C206EA5003A4BCA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F12CD9C22C206EA5003A4BCA /* Base */; };
 		F14817C42C2991BD00A30D20 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817C32C2991BD00A30D20 /* TabBarController.swift */; };
 		F14817C62C29C1CA00A30D20 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */; };
-		F14817C82C29C2A900A30D20 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817C72C29C2A900A30D20 /* Resources.swift */; };
+		F14817C82C29C2A900A30D20 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817C72C29C2A900A30D20 /* R.swift */; };
 		F14817CB2C29CB8C00A30D20 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817CA2C29CB8C00A30D20 /* NavBarController.swift */; };
 		F14817CE2C29EB5500A30D20 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817CD2C29EB5500A30D20 /* BaseController.swift */; };
 		F14817D02C29EEBA00A30D20 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */; };
 		F14817D22C29F12A00A30D20 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D12C29F12A00A30D20 /* SessionController.swift */; };
 		F14817D42C29F14400A30D20 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D32C29F14400A30D20 /* ProgressController.swift */; };
 		F14817D62C29F15B00A30D20 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D52C29F15B00A30D20 /* SettingsController.swift */; };
+		F15F1CB52C30171400161DCB /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F1CB42C30171400161DCB /* BaseInfoView.swift */; };
 		F1C14FDF2C2DC16B0017EE1B /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,13 +45,14 @@
 		F12CD9C42C206EA5003A4BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F14817C32C2991BD00A30D20 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F14817C52C29C1CA00A30D20 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		F14817C72C29C2A900A30D20 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		F14817C72C29C2A900A30D20 /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		F14817CA2C29CB8C00A30D20 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		F14817CD2C29EB5500A30D20 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		F14817D12C29F12A00A30D20 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		F14817D32C29F14400A30D20 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		F14817D52C29F15B00A30D20 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		F15F1CB42C30171400161DCB /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +117,7 @@
 				F12CD9BF2C206EA5003A4BCA /* Assets.xcassets */,
 				F12CD9C42C206EA5003A4BCA /* Info.plist */,
 				F12CD9C12C206EA5003A4BCA /* LaunchScreen.storyboard */,
-				F14817C72C29C2A900A30D20 /* Resources.swift */,
+				F14817C72C29C2A900A30D20 /* R.swift */,
 				F129D47F2C2F0F64007003E4 /* CalendarExt.swift */,
 			);
 			path = resources;
@@ -201,6 +203,7 @@
 				F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */,
 				F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */,
 				F129D4792C2ECCE8007003E4 /* BaseView.swift */,
+				F15F1CB42C30171400161DCB /* BaseInfoView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C14FDF2C2DC16B0017EE1B /* SecondaryButton.swift in Sources */,
+				F15F1CB52C30171400161DCB /* BaseInfoView.swift in Sources */,
 				F129D47E2C2EFEA3007003E4 /* WeekDayView.swift in Sources */,
 				F14817D42C29F14400A30D20 /* ProgressController.swift in Sources */,
 				F12CD9BB2C206EA2003A4BCA /* OverviewController.swift in Sources */,
@@ -293,7 +297,7 @@
 				F14817D02C29EEBA00A30D20 /* UIViewExt.swift in Sources */,
 				F12CD9B72C206EA2003A4BCA /* AppDelegate.swift in Sources */,
 				F129D47A2C2ECCE8007003E4 /* BaseView.swift in Sources */,
-				F14817C82C29C2A900A30D20 /* Resources.swift in Sources */,
+				F14817C82C29C2A900A30D20 /* R.swift in Sources */,
 				F12CD9B92C206EA2003A4BCA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

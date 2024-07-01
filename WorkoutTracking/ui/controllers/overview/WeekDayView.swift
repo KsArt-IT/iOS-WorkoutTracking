@@ -41,8 +41,8 @@ extension WeekView.WeekDayView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: topAnchor, constant: Resources.Constant.tiny),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Resources.Constant.tiny),
+            stackView.topAnchor.constraint(equalTo: topAnchor, constant: R.Constant.tiny),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -R.Constant.tiny),
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
@@ -51,17 +51,17 @@ extension WeekView.WeekDayView {
     override func configureAppearance() {
         super.configureAppearance()
 
-        layer.cornerRadius = Resources.Constant.small
+        layer.cornerRadius = R.Constant.small
         layer.masksToBounds = true
 
-        nameLabel.font = Resources.Fonts.helvelticaRegular(with: 9)
+        nameLabel.font = R.Fonts.helvelticaRegular(with: 9)
         nameLabel.textAlignment = .center
 
-        dateLabel.font = Resources.Fonts.helvelticaRegular(with: 15)
+        dateLabel.font = R.Fonts.helvelticaRegular(with: 15)
         dateLabel.textAlignment = .center
 
         // отступы между элементами
-        stackView.spacing = Resources.Constant.tiny
+        stackView.spacing = R.Constant.tiny
         // сделать вертикальным, потому что он горизонталный
         stackView.axis = .vertical
     }

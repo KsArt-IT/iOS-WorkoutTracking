@@ -43,6 +43,7 @@ final class CalendarExt {
                 return nil
             }
             let dayComponent = calendar.component(.day, from: date)
+            // isDate сравнение дат без учета времени
             return (weekDaysShort[i], dayComponent, calendar.isDate(date, inSameDayAs: fromDate))
         }
     }

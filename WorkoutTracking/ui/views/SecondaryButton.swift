@@ -61,17 +61,17 @@ private extension SecondaryButton {
     }
 
     func configureAppearance() {
-        layer.cornerRadius = Resources.Constant.Buttons.cornerRadius
+        layer.cornerRadius = R.Constant.Buttons.cornerRadius
         makeSystem(self)
         updateAppearance()
         backgroundColor = .secondary
 
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.font = Resources.Fonts.helvelticaRegular(with: 15)
+        label.font = R.Fonts.helvelticaRegular(with: 15)
 
         icon.translatesAutoresizingMaskIntoConstraints = false
-        icon.image = Resources.Images.Common.downArrow.withRenderingMode(.alwaysTemplate)
+        icon.image = R.Images.Common.downArrow.withRenderingMode(.alwaysTemplate)
     }
 
     func updateAppearance() {

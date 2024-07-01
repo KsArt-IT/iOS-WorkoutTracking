@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum Resources {
+enum R {
 
     enum Strings {
         enum TabBar {
@@ -103,5 +103,3 @@ enum Resources {
         }
     }
 }
-
-//typealias Titles = (navBar: String, tabBar: String)

@@ -54,8 +54,8 @@ final class TabBarController: UITabBarController {
 
     private func getTabBarItem(_ tab: Tabs) -> UITabBarItem {
         UITabBarItem(
-            title: Resources.Strings.TabBar.getTitle(tab),
-            image: Resources.Images.TabBar.getIcon(tab),
+            title: R.Strings.TabBar.getTitle(tab),
+            image: R.Images.TabBar.getIcon(tab),
             tag: tab.rawValue
         )
     }

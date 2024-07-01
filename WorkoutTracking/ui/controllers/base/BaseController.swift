@@ -21,12 +21,12 @@ class BaseController: UIViewController {
 extension BaseController {
     func setTitle(of tab: Tabs) {
         // при установке титла окна меняется и tabBarItem.title, поэтому переназначаем
-        title = Resources.Strings.NavBar.getTitle(tab)
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.getTitle(tab)
+        title = R.Strings.NavBar.getTitle(tab)
+        navigationController?.tabBarItem.title = R.Strings.TabBar.getTitle(tab)
     }
 
     func addNavBarButton(of tab: Tabs, at position: NavBarPosition) {
-        let title = Resources.Strings.Buttons.getTitle(of: tab, at: position)
+        let title = R.Strings.Buttons.getTitle(of: tab, at: position)
         let button = getButton(with: title)
 
         switch position {
@@ -43,7 +43,7 @@ extension BaseController {
         let button = UIButton(type: .system)
         
         button.setTitle(title, for: .normal)
-        button.titleLabel?.font = Resources.Fonts.helvelticaRegular()
+        button.titleLabel?.font = R.Fonts.helvelticaRegular()
         button.setTitleColor(.active, for: .normal)
         button.setTitleColor(.inactive, for: .disabled)
 

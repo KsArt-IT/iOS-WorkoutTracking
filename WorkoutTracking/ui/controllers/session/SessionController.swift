@@ -7,15 +7,30 @@
 
 import UIKit
 
-class SessionController: BaseController { }
+class SessionController: BaseController { 
+    private let timerView: BaseInfoView = {
+        let view = BaseInfoView()
+
+        return view
+    }()
+}
 
 extension SessionController {
     override func setupViews() {
         super.setupViews()
+
+        view.addSubview(timerView)
     }
 
     override func constraintViews() {
         super.constraintViews()
+
+        NSLayoutConstraint.activate([
+            timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: R.Constant.medium),
+            timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: R.Constant.medium),
+            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -R.Constant.medium),
+            timerView.heightAnchor.constraint(equalToConstant: 300)
+        ])
     }
 
     override func configureAppearance() {
@@ -25,5 +40,8 @@ extension SessionController {
 
         addNavBarButton(of: .session, at: .left)
         addNavBarButton(of: .session, at: .right)
+
+        timerView.translatesAutoresizingMaskIntoConstraints = false
+
     }
 }

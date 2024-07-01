@@ -37,7 +37,7 @@ extension WeekView {
         super.configureAppearance()
 
         // отступы между элементами
-        stackView.spacing = Resources.Constant.small
+        stackView.spacing = R.Constant.small
         // сделать равными по ширине
         stackView.distribution = .fillEqually
 

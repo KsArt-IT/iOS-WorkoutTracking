@@ -44,23 +44,23 @@ extension OverviewNavBar {
         super.constraintViews()
 
         NSLayoutConstraint.activate([
-            addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: Resources.Constant.small),
-            addButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Resources.Constant.medium),
-            addButton.heightAnchor.constraint(equalToConstant: Resources.Constant.Buttons.size),
-            addButton.widthAnchor.constraint(equalToConstant: Resources.Constant.Buttons.size),
+            addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: R.Constant.small),
+            addButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -R.Constant.medium),
+            addButton.heightAnchor.constraint(equalToConstant: R.Constant.Buttons.size),
+            addButton.widthAnchor.constraint(equalToConstant: R.Constant.Buttons.size),
 
             allWorkoutsButton.centerYAnchor.constraint(equalTo: addButton.centerYAnchor),
-            allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -Resources.Constant.small),
-            allWorkoutsButton.heightAnchor.constraint(equalToConstant: Resources.Constant.Buttons.height),
+            allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -R.Constant.small),
+            allWorkoutsButton.heightAnchor.constraint(equalToConstant: R.Constant.Buttons.height),
 
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Resources.Constant.medium),
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: R.Constant.medium),
 
-            weekView.topAnchor.constraint(equalTo: addButton.bottomAnchor, constant: Resources.Constant.small),
-            weekView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Resources.Constant.medium),
-            weekView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Resources.Constant.medium),
-            weekView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Resources.Constant.small),
+            weekView.topAnchor.constraint(equalTo: addButton.bottomAnchor, constant: R.Constant.small),
+            weekView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: R.Constant.medium),
+            weekView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -R.Constant.medium),
+            weekView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -R.Constant.small),
         ])
     }
 
@@ -69,18 +69,18 @@ extension OverviewNavBar {
         backgroundColor = .white
 
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.text = Resources.Strings.NavBar.getTitle(.overview)
+        titleLabel.text = R.Strings.NavBar.getTitle(.overview)
         titleLabel.textColor = .titleGray
-        titleLabel.font = Resources.Fonts.helvelticaRegular(with: 22)
+        titleLabel.font = R.Fonts.helvelticaRegular(with: 22)
 
         allWorkoutsButton.translatesAutoresizingMaskIntoConstraints = false
-        allWorkoutsButton.setTitle(Resources.Strings.Buttons.Common.allWorkouts)
+        allWorkoutsButton.setTitle(R.Strings.Buttons.Common.allWorkouts)
 
         addButton.translatesAutoresizingMaskIntoConstraints = false
-        addButton.setImage(Resources.Images.Common.plusCircleFillLarge, for: .normal)
+        addButton.setImage(R.Images.Common.plusCircleFillLarge, for: .normal)
         addButton.tintColor = .active
         // Настройка углов в стиле Capsule
-        addButton.layer.cornerRadius = Resources.Constant.Buttons.size / 2
+        addButton.layer.cornerRadius = R.Constant.Buttons.size / 2
         addButton.clipsToBounds = true
 
         weekView.translatesAutoresizingMaskIntoConstraints = false
