@@ -10,7 +10,7 @@ import UIKit
 final class OverviewNavBar: BaseView {
 
     private let titleLabel = UILabel()
-    private let allWorkoutsButton = SecondaryButton()
+    private let allWorkoutsButton = WAButton(of: .filled)
     private let addButton = UIButton()
     private let weekView = WeekView()
 
@@ -75,7 +75,7 @@ extension OverviewNavBar {
 
         allWorkoutsButton.translatesAutoresizingMaskIntoConstraints = false
         allWorkoutsButton.setTitle(R.Strings.Buttons.Common.allWorkouts)
-
+        
         addButton.translatesAutoresizingMaskIntoConstraints = false
         addButton.setImage(R.Images.Common.plusCircleFillLarge, for: .normal)
         addButton.tintColor = .active

@@ -27,7 +27,7 @@
 		F14817D42C29F14400A30D20 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D32C29F14400A30D20 /* ProgressController.swift */; };
 		F14817D62C29F15B00A30D20 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D52C29F15B00A30D20 /* SettingsController.swift */; };
 		F15F1CB52C30171400161DCB /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F1CB42C30171400161DCB /* BaseInfoView.swift */; };
-		F1C14FDF2C2DC16B0017EE1B /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */; };
+		F1C14FDF2C2DC16B0017EE1B /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C14FDE2C2DC16B0017EE1B /* WAButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,7 @@
 		F14817D32C29F14400A30D20 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		F14817D52C29F15B00A30D20 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		F15F1CB42C30171400161DCB /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
-		F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		F1C14FDE2C2DC16B0017EE1B /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				F14817CF2C29EEBA00A30D20 /* UIViewExt.swift */,
-				F1C14FDE2C2DC16B0017EE1B /* SecondaryButton.swift */,
+				F1C14FDE2C2DC16B0017EE1B /* WAButton.swift */,
 				F129D4792C2ECCE8007003E4 /* BaseView.swift */,
 				F15F1CB42C30171400161DCB /* BaseInfoView.swift */,
 			);
@@ -281,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C14FDF2C2DC16B0017EE1B /* SecondaryButton.swift in Sources */,
+				F1C14FDF2C2DC16B0017EE1B /* WAButton.swift in Sources */,
 				F15F1CB52C30171400161DCB /* BaseInfoView.swift in Sources */,
 				F129D47E2C2EFEA3007003E4 /* WeekDayView.swift in Sources */,
 				F14817D42C29F14400A30D20 /* ProgressController.swift in Sources */,
