@@ -15,7 +15,7 @@ final class CalendarExt {
 
     /// A calendar instance with Monday as the first day of the week.
     private static let calendar: Calendar = {
-        var calendar = Calendar.autoupdatingCurrent
+        var calendar = Calendar(identifier: .gregorian)
         calendar.firstWeekday = 2  // 2 means Monday is the first day of the week
         calendar.locale = Locale.autoupdatingCurrent
         return calendar
