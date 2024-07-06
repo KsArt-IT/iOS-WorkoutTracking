@@ -9,6 +9,31 @@ import UIKit
 
 class SessionController: BaseController { 
     private let timerView = WATimerView()
+
+    private let timerDuration = 3.0
+
+    override func navBarLeftButtonHandler() {
+        // start/pause
+        if timerView.getState() == TimerState.started {
+            timerView.pauseTimer()
+        } else {
+            timerView.startTimer { [weak self] in
+                guard let self else { return }
+
+                self.setTitleForNavBarButton(of: .session, at: .left, started: self.timerView.getState() == .paused)
+            }
+        }
+        setTitleForNavBarButton(of: .session, at: .left, started: timerView.getState() != .paused)
+    }
+
+    override func navBarRightButtonHandler() {
+        // stop
+        timerView.stopTimer { [weak self] in
+            guard let self else { return }
+
+            self.setTitleForNavBarButton(of: .session, at: .left, started: self.timerView.getState() == .paused)
+        }
+    }
 }
 
 extension SessionController {
@@ -39,5 +64,6 @@ extension SessionController {
 
         timerView.translatesAutoresizingMaskIntoConstraints = false
 
+        timerView.configure(with: timerDuration, progress: 0)
     }
 }

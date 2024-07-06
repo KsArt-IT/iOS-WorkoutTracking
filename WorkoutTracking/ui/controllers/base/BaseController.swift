@@ -39,6 +39,17 @@ extension BaseController {
         }
     }
 
+    func setTitleForNavBarButton(of tab: Tabs, at position: NavBarPosition, started: Bool = true) {
+        let title = R.Strings.Buttons.getTitle(of: tab, at: position, started: started)
+
+        switch position {
+            case .left:
+                (navigationItem.leftBarButtonItem?.customView as? UIButton)?.setTitle(title, for: .normal)
+            case .right:
+                (navigationItem.rightBarButtonItem?.customView as? UIButton)?.setTitle(title, for: .normal)
+        }
+    }
+
     private func getButton(with title: String) -> UIButton {
         let button = UIButton(type: .system)
         

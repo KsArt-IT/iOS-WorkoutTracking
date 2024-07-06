@@ -16,14 +16,21 @@ final class WAProgressView: UIView {
 
     // Draw the progress circle and dot with the given percentage (0...1)
     func drawProgress(with percent: CGFloat) {
+        // чтобы слои не наслаивались, удаляем предыдущие
+        layer.sublayers?.removeAll()
+
+        // основные параметры отрисовки
         let radius = (UIScreen.main.bounds.width - (15 + 40) * 2) / 2
         let bursRadius = (UIScreen.main.bounds.width - (15 + 40 + 25) * 2) / 2
         let center = CGPoint(x: radius, y: radius)
         let startAngle = -CGFloat.pi * 7 / 6
         let endAngle = CGFloat.pi * 1 / 6
 
+        // рисуем дуги прогресса
         addArc(with: percent, center: center, radius: radius, startAngle: startAngle, endAngle: endAngle)
+        // рисуем точку конечную прогресса
         addDot(with: percent, center: center, radius: radius)
+        // рисуем черточки
         addBars(with: percent, center: center, radius: bursRadius, startAngle: startAngle, endAngle: endAngle)
     }
 

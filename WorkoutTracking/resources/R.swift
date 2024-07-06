@@ -37,12 +37,12 @@ enum R {
                 static let allWorkouts  = String(localized: "buttonAllWorkouts")
             }
 
-            static func getTitle(of tab: Tabs, at position: NavBarPosition) -> String {
+            static func getTitle(of tab: Tabs, at position: NavBarPosition, started: Bool = false) -> String {
                 switch position {
                     case .left:
                         switch tab {
                             case .overview: String(localized: "overviewNavBarButtonLeft")
-                            case .session: String(localized: "sessionNavBarButtonLeft")
+                            case .session: started ? String(localized: "sessionNavBarButtonLeftStarted") : String(localized: "sessionNavBarButtonLeft")
                             case .progress: String(localized: "progressNavBarButtonLeft")
                             case .settings: String(localized: "settingsNavBarButtonLeft")
                         }
