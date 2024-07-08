@@ -9,17 +9,29 @@ import UIKit
 
 final class WATimerView: BaseInfoView {
 
+    // вью для отображения прогресса
     private let progressView = WAProgressView()
     
+    // таймер
     private var timer: Timer? = nil
-    private var timerProgress: CGFloat = 0
+
+    // прогресс, сколько прошло, сек
+    private var timerProgress = 0.0
+    // время таймера, сек
     private var timerDuration = 0.0
-    private var timerDurationStop = 0.0
+    // обратный отсчет
+    private var timerCountdown = 0.0
+    // состояние таймера
     private var timerState = TimerState.stoped
+
+    // дата начала замера для таймера
+    private var timerStart = Date()
+    // интервал вызова таймера, сек (24 раза в секунду)
+    private let interval = 0.05
 
     func configure(with duration: Double, progress: Double) {
         timerDuration = duration
-        timerDurationStop = 0.05 * duration
+        timerCountdown = 3 * interval * duration
 
         // чтобы progress не был больше duration
         let currentValue = progress > duration ? duration : progress
@@ -39,32 +51,37 @@ final class WATimerView: BaseInfoView {
         // остановим прошлый или паузу?
         timer?.invalidate()
         timerState = .started
+        // сохраним текущее время для подсчета интервала
+        timerStart = Date()
         // запустим новый со старыми значениями
-        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [weak self] timer in
+        timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { [weak self] timer in
             guard let self = self else { return }
 
-            self.tickTimer(timer.timeInterval)
+            // изменяем на прошедшее время
+            self.tickTimer(getSecondsPassed())
             if self.isEndTimer() {
                 timer.invalidate()
                 timerState = .stoped
                 completion()
             }
         }
+        timer?.tolerance = 0.1 * interval
     }
 
     func stopTimer(_ completion: @escaping () -> Void) {
         timer?.invalidate()
 
-        self.timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [weak self] timer in
+        self.timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { [weak self] timer in
             guard let self = self else { return }
 
-            self.tickTimer(-timerDurationStop)
+            self.tickTimer(-timerCountdown)
             if self.isEndTimer(reverse: true) {
                 timer.invalidate()
                 timerState = .stoped
                 completion()
             }
         }
+        timer?.tolerance = interval
     }
 
     func pauseTimer() {
@@ -88,6 +105,13 @@ final class WATimerView: BaseInfoView {
 
     private func isEndTimer(reverse: Bool = false) -> Bool {
         timerProgress == (reverse ? 0 : timerDuration)
+    }
+
+    private func getSecondsPassed() -> Double {
+        // секунд прошло от прошлой проверки + поправка
+        let seconds = -timerStart.timeIntervalSinceNow + 0.0001
+        timerStart = Date()
+        return seconds
     }
 }
 
