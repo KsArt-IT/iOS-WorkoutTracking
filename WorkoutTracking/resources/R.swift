@@ -32,6 +32,13 @@ enum R {
             }
         }
 
+        enum Timer {
+            static let elapsedTime = String(localized: "Elapsed Time")
+            static let remainingTime = String(localized: "Remaining Time")
+            static let completedPercent = String(localized: "Completed")
+            static let remainingPercent = String(localized: "Remaining")
+        }
+
         enum Buttons {
             enum Common {
                 static let allWorkouts  = String(localized: "buttonAllWorkouts")

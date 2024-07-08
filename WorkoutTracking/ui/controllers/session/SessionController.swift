@@ -10,7 +10,7 @@ import UIKit
 class SessionController: BaseController { 
     private let timerView = WATimerView()
 
-    private let timerDuration = 3.0
+    private let timerDuration = 60.0
 
     override func navBarLeftButtonHandler() {
         // start/pause
@@ -50,7 +50,7 @@ extension SessionController {
             timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: R.Constant.medium),
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: R.Constant.medium),
             timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -R.Constant.medium),
-            timerView.heightAnchor.constraint(equalToConstant: 300)
+//            timerView.heightAnchor.constraint(equalToConstant: 300)
         ])
     }
 
