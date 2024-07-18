@@ -12,6 +12,9 @@ class SessionController: BaseController {
 
     private let timerDuration = 60.0
 
+    private let statsView = StatsView(with: R.Strings.Session.workuotStatus)
+    private let stepsView = BaseInfoView(with: R.Strings.Session.stepsCounter)
+
     override func navBarLeftButtonHandler() {
         // start/pause
         if timerView.getState() == TimerState.started {
@@ -41,16 +44,31 @@ extension SessionController {
         super.setupViews()
 
         view.addSubview(timerView)
+        view.addSubview(statsView)
+        view.addSubview(stepsView)
     }
 
     override func constraintViews() {
         super.constraintViews()
 
+        timerView.translatesAutoresizingMaskIntoConstraints = false
+        statsView.translatesAutoresizingMaskIntoConstraints = false
+        stepsView.translatesAutoresizingMaskIntoConstraints = false
+
         NSLayoutConstraint.activate([
             timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: R.Constant.medium),
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: R.Constant.medium),
             timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -R.Constant.medium),
-//            timerView.heightAnchor.constraint(equalToConstant: 300)
+
+            statsView.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: R.Constant.small),
+            statsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: R.Constant.medium),
+            statsView.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -R.Constant.small),
+            statsView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60),
+
+            stepsView.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: R.Constant.small),
+            stepsView.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: R.Constant.small),
+            stepsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -R.Constant.medium),
+            stepsView.bottomAnchor.constraint(equalTo:  statsView.bottomAnchor),
         ])
     }
 
@@ -62,8 +80,14 @@ extension SessionController {
         addNavBarButton(of: .session, at: .left)
         addNavBarButton(of: .session, at: .right)
 
-        timerView.translatesAutoresizingMaskIntoConstraints = false
 
         timerView.configure(with: timerDuration, progress: 0)
+
+        statsView.configure(with: [
+            .heartRate(value: "155"),
+            .averagePace(value: "9'20''"),
+            .totalSteps(value: "7,682"),
+            .totalDistance(value: "8.25"),
+        ])
     }
 }

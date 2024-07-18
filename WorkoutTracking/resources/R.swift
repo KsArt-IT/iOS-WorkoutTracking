@@ -39,6 +39,16 @@ enum R {
             static let remainingPercent = String(localized: "Remaining")
         }
 
+        enum Session {
+            static let workuotStatus = String(localized: "Workout Status")
+            static let stepsCounter = String(localized: "Steps Counter")
+            
+            static let heartRate = String(localized: "Heart Rate")
+            static let averagePace = String(localized: "Average Pace")
+            static let totalDistance = String(localized: "Total Distance")
+            static let totalSteps = String(localized: "Total Steps")
+        }
+
         enum Buttons {
             enum Common {
                 static let allWorkouts  = String(localized: "buttonAllWorkouts")
@@ -72,8 +82,16 @@ enum R {
         enum Common {
             static let downArrow = UIImage(systemName: "chevron.down") ?? UIImage()
             static let plusCircleFill = UIImage(systemName: "plus.circle.fill") ?? UIImage()
+
             // Применение конфигурации к изображению
             static let plusCircleFillLarge = UIImage(systemName: "plus.circle.fill")?.withConfiguration(large) ?? UIImage()
+        }
+
+        enum Session {
+            static let heartRate = UIImage(named: "heart-rate") ?? UIImage()
+            static let averagePace = UIImage(named: "speedometer") ?? UIImage()
+            static let totalSteps = UIImage(named: "footprint") ?? UIImage()
+            static let totalDistance = UIImage(named: "map") ?? UIImage()
         }
 
         enum TabBar {
@@ -102,6 +120,7 @@ enum R {
         static let large: CGFloat = 32
 
         static let cornerRadius: CGFloat = 6
+        static let iconSize: CGFloat = 24
 
         enum Buttons {
             static let height: CGFloat = 28

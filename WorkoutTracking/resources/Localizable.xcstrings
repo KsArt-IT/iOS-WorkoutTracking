@@ -1,6 +1,23 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Average Pace" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Средний темп"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Середній темп"
+          }
+        }
+      }
+    },
     "buttonAllWorkouts" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -54,6 +71,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Витрачений час"
+          }
+        }
+      }
+    },
+    "Heart Rate" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пульс"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пульс"
           }
         }
       }
@@ -399,6 +433,74 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Налаштування"
+          }
+        }
+      }
+    },
+    "Steps Counter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Счетчик шагов"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лічильник кроків"
+          }
+        }
+      }
+    },
+    "Total Distance" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Общее расстояние"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загальна відстань"
+          }
+        }
+      }
+    },
+    "Total Steps" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всего шагов"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загальна кількість кроків"
+          }
+        }
+      }
+    },
+    "Workout Status" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Workout Status"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Статус тренування"
           }
         }
       }
