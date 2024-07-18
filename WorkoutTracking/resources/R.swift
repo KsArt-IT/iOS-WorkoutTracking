@@ -122,6 +122,13 @@ enum R {
         static let cornerRadius: CGFloat = 6
         static let iconSize: CGFloat = 24
 
+        enum Bars {
+            static let width: CGFloat = 16
+            static let height: CGFloat = 40
+            static let cornerRadius: CGFloat = 2.5
+            static let size: CGFloat = 10
+        }
+
         enum Buttons {
             static let height: CGFloat = 28
             static let cornerRadius: CGFloat = height / 2
