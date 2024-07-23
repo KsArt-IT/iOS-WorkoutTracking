@@ -12,8 +12,8 @@ final class DailyPerformanceView: BaseInfoView {
     private let barsView = BarsView()
 
     // MARK: - Configure View
-    func configure(with items: [BarView.Data]) {
-        barsView.configure(with: items)
+    func configure(with data: [BarView.Data]) {
+        barsView.configure(with: data)
     }
 }
 

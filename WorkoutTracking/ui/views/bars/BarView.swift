@@ -43,7 +43,7 @@ final class BarView: BaseView {
     }
     
     @MainActor required init?(coder: NSCoder) {
-        self.heightMultiplier = 0
+        self.heightMultiplier = 1
         super.init(coder: coder)
     }
 }
@@ -72,7 +72,7 @@ extension BarView {
             barView.topAnchor.constraint(equalTo: valueLabel.bottomAnchor, constant: R.Constant.small),
             barView.centerXAnchor.constraint(equalTo: centerXAnchor),
             barView.widthAnchor.constraint(equalToConstant: R.Constant.Bars.width),
-            barView.heightAnchor.constraint(lessThanOrEqualTo: heightAnchor, multiplier: heightMultiplier * 0.78),
+            barView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: heightMultiplier * 0.75),
 
             titleLabel.topAnchor.constraint(equalTo: barView.bottomAnchor, constant: R.Constant.small),
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -82,6 +82,8 @@ extension BarView {
 
     override func configureAppearance() {
         super.configureAppearance()
+
+        backgroundColor = .clear
     }
 }
 
