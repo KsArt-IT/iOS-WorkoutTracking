@@ -39,7 +39,7 @@ final class BarView: BaseView {
         super.init(frame: .zero)
 
         valueLabel.text = data.value
-        titleLabel.text = data.title
+        titleLabel.text = data.title.uppercased()
     }
     
     @MainActor required init?(coder: NSCoder) {

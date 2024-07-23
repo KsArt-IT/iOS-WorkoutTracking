@@ -49,6 +49,14 @@ enum R {
             static let totalSteps = String(localized: "Total Steps")
         }
 
+        enum Progress {
+            static let dailyPerformance = String(localized: "dailyPerformance")
+            static let last7Days = String(localized: "last7Days")
+
+            static let monthlyPerformance = String(localized: "monthlyPerformance")
+            static let last10Months = String(localized: "last10Months")
+        }
+
         enum Buttons {
             enum Common {
                 static let allWorkouts  = String(localized: "buttonAllWorkouts")

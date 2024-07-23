@@ -71,11 +71,11 @@ private extension WAButton {
         NSLayoutConstraint.activate([
             icon.centerYAnchor.constraint(equalTo: centerYAnchor),
             icon.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -horizontalOffset),
-            icon.heightAnchor.constraint(equalToConstant: 5),
-            icon.widthAnchor.constraint(equalToConstant: 10),
+            icon.heightAnchor.constraint(equalToConstant: R.Constant.tiny),
+            icon.widthAnchor.constraint(equalToConstant: R.Constant.small),
 
             label.centerYAnchor.constraint(equalTo: centerYAnchor),
-            label.trailingAnchor.constraint(equalTo: icon.leadingAnchor, constant: -10),
+            label.trailingAnchor.constraint(equalTo: icon.leadingAnchor, constant: -R.Constant.small),
             label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: horizontalOffset * 2)
         ])
     }
@@ -83,7 +83,8 @@ private extension WAButton {
     func configureAppearance() {
         switch type {
             case .plain:
-                label.font = R.Fonts.helvelticaRegular(with: 13)
+                label.font = R.Fonts.helvelticaRegular(with: 12)
+                label.lineBreakMode = .byTruncatingTail // Устанавливаем обрезку текста с хвоста
                 activeColor = .inactive
                 backgroundColor = .clear
             case .filled:
