@@ -89,7 +89,11 @@ enum R {
 
         enum Common {
             static let downArrow = UIImage(systemName: "chevron.down") ?? UIImage()
+            static let rightArrow = UIImage(systemName: "chevron.right") ?? UIImage()
+
             static let plusCircleFill = UIImage(systemName: "plus.circle.fill") ?? UIImage()
+            static let checkmarkNotDovn = UIImage(systemName: "circle") ?? UIImage()
+            static let checkmarkDovn = UIImage(systemName: "checkmark.circle") ?? UIImage()
 
             // Применение конфигурации к изображению
             static let plusCircleFillLarge = UIImage(systemName: "plus.circle.fill")?.withConfiguration(large) ?? UIImage()
@@ -128,7 +132,20 @@ enum R {
         static let large: CGFloat = 32
 
         static let cornerRadius: CGFloat = 6
-        static let iconSize: CGFloat = 24
+
+        static let smallIconSize: CGFloat = 24
+        static let largeIconSize: CGFloat = 28
+
+        enum Arrow {
+            static let height: CGFloat = 12
+            static let width: CGFloat = 8
+        }
+
+        enum Collection {
+            static let sizeItem: CGFloat = 70
+            static let sizeHeader: CGFloat = 32
+            static let cornerRadius: CGFloat = 20
+        }
 
         enum Bars {
             static let width: CGFloat = 16

@@ -52,6 +52,32 @@ final class CalendarExt {
         }
     }
 
+    public static func getThreeDaysOfWeek(fromDate: Date = Date()) -> (first: Date, second: Date, third: Date)? {
+        var components = calendar.dateComponents([.year, .month, .day, .weekday], from: fromDate)
+        
+        guard let todayWeekday = components.weekday else { return nil }
+        
+        // определить день - понедельник
+        let daysToMonday = (9 - todayWeekday) % 7
+        // определить день - среда
+        let daysToWednesday = (11 - todayWeekday) % 7
+        // определить день - пятница
+        let daysToFriday = (13 - todayWeekday) % 7
+        
+        guard let monday = calendar.date(byAdding: .day, value: daysToMonday, to: fromDate),
+              let wednesday = calendar.date(byAdding: .day, value: daysToWednesday, to: fromDate),
+              let friday = calendar.date(byAdding: .day, value: daysToFriday, to: fromDate) else { return nil }
+        
+        return (monday, wednesday, friday)
+    }
+
+    public static func isDateTodayOrPast(fromDate: Date) -> Bool {
+        let today = calendar.startOfDay(for: Date())
+        let dateToCheck = calendar.startOfDay(for: fromDate)
+
+        return dateToCheck <= today
+    }
+
     public static func getMonthsShort(fromDate: Date = Date()) -> [MonthsShort] {
         let month = calendar.component(.month, from: fromDate) - 1
         // Create an array of tuples (weekday, date)

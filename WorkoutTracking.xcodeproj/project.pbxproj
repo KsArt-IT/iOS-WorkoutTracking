@@ -35,6 +35,8 @@
 		F14817D62C29F15B00A30D20 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14817D52C29F15B00A30D20 /* SettingsController.swift */; };
 		F15F1CB52C30171400161DCB /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F1CB42C30171400161DCB /* BaseInfoView.swift */; };
 		F16318562C4FB8F90026E95A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16318552C4FB8F90026E95A /* ChartView.swift */; };
+		F163185A2C4FF1610026E95A /* TrainingViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16318592C4FF1610026E95A /* TrainingViewHeader.swift */; };
+		F163185C2C4FF6FC0026E95A /* TrainingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163185B2C4FF6FC0026E95A /* TrainingViewCell.swift */; };
 		F16925402C4E7D3600E9BA2D /* DailyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F169253F2C4E7D3600E9BA2D /* DailyPerformanceView.swift */; };
 		F16925422C4EA21A00E9BA2D /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16925412C4EA21A00E9BA2D /* MonthlyPerformanceView.swift */; };
 		F16925452C4EA28800E9BA2D /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16925442C4EA28800E9BA2D /* ChartsView.swift */; };
@@ -76,6 +78,8 @@
 		F14817D52C29F15B00A30D20 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		F15F1CB42C30171400161DCB /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		F16318552C4FB8F90026E95A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		F16318592C4FF1610026E95A /* TrainingViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewHeader.swift; sourceTree = "<group>"; };
+		F163185B2C4FF6FC0026E95A /* TrainingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewCell.swift; sourceTree = "<group>"; };
 		F169253F2C4E7D3600E9BA2D /* DailyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPerformanceView.swift; sourceTree = "<group>"; };
 		F16925412C4EA21A00E9BA2D /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
 		F16925442C4EA28800E9BA2D /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
@@ -255,6 +259,15 @@
 			path = base;
 			sourceTree = "<group>";
 		};
+		F16318582C4FF1220026E95A /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				F16318592C4FF1610026E95A /* TrainingViewHeader.swift */,
+				F163185B2C4FF6FC0026E95A /* TrainingViewCell.swift */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
 		F169253E2C4E7C4300E9BA2D /* performance */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				F11FBA292C491367001F9670 /* base */,
+				F16318582C4FF1220026E95A /* collection */,
 				F169253E2C4E7C4300E9BA2D /* performance */,
 				F11FBA2E2C491A63001F9670 /* bars */,
 				F16925432C4EA27600E9BA2D /* charts */,
@@ -404,11 +418,13 @@
 				F16925402C4E7D3600E9BA2D /* DailyPerformanceView.swift in Sources */,
 				F14817D62C29F15B00A30D20 /* SettingsController.swift in Sources */,
 				F16925472C4ECF0E00E9BA2D /* ChartsYAxisView.swift in Sources */,
+				F163185C2C4FF6FC0026E95A /* TrainingViewCell.swift in Sources */,
 				F11FBA302C491A85001F9670 /* BarView.swift in Sources */,
 				F11FBA282C49111D001F9670 /* StatsItem.swift in Sources */,
 				F14817C42C2991BD00A30D20 /* TabBarController.swift in Sources */,
 				F14817D02C29EEBA00A30D20 /* UIViewExt.swift in Sources */,
 				F130A2042C32E31C00DE5047 /* WATimerView.swift in Sources */,
+				F163185A2C4FF1610026E95A /* TrainingViewHeader.swift in Sources */,
 				F12CD9B72C206EA2003A4BCA /* AppDelegate.swift in Sources */,
 				F129D47A2C2ECCE8007003E4 /* BaseView.swift in Sources */,
 				F16318562C4FB8F90026E95A /* ChartView.swift in Sources */,

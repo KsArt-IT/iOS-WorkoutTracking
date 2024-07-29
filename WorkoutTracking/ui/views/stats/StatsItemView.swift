@@ -70,7 +70,7 @@ extension StatsItemView {
         NSLayoutConstraint.activate([
             imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            imageView.heightAnchor.constraint(equalToConstant: R.Constant.iconSize),
+            imageView.heightAnchor.constraint(equalToConstant: R.Constant.smallIconSize),
             imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor),
 
             stackView.topAnchor.constraint(equalTo: topAnchor),

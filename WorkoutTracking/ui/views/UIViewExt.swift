@@ -41,4 +41,24 @@ extension UIView {
     @objc func handleOut() {
         UIView.animate(withDuration: 0.15) { self.alpha = 1 }
     }
+
+    // MARK: - Corner Radius
+
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(
+            roundedRect: self.bounds,
+            byRoundingCorners: corners,
+            cornerRadii: CGSize(width: radius, height: radius)
+        )
+
+        let borderLayer = CAShapeLayer()
+        borderLayer.path = path.cgPath
+        borderLayer.strokeColor = UIColor.separator.cgColor
+        borderLayer.fillColor = UIColor.clear.cgColor
+        borderLayer.lineWidth = 1
+
+        layer.addSublayer(borderLayer)
+        self.layer.masksToBounds = true
+        self.clipsToBounds = true
+    }
 }
